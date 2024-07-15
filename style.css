@@ -1,11 +1,11 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(76, 77, 76);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(97, 128, 156);
 }
 
 .navbar {
-    background-color: rgb(182, 235, 60);
+    background-color: rgb(35, 89, 160);
     overflow: hidden;
 }
 
@@ -29,4 +29,58 @@ body {
 
 .navbar .nav-item {
     float: right;
+}
+
+.image img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    float: right;
+    padding: 0 20px 20px 0;
+}
+
+.content h2 {
+    font-size: 30px;
+}
+
+.content h3 {
+    font-size: 30px;
+}
+
+.content p {
+    font-size: 25px;
+}
+
+#ball img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    float: right;
+    padding: 0 20px 20px 0;
+    text-align: center;
+}
+
+#snow img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    float: left;
+    padding: 0 20px 20px 0;
+}
+
+#desk img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    float: right;
+    padding: 0 20px 20px 0;
+    text-align: center;
+}
+
+#code img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    float: left;
+    padding: 0 20px 20px 0;
 }
