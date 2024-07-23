@@ -1,12 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(97, 128, 156);
 }
 
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        height:max-content;
+    }
+}
+
 .navbar {
     background-color: rgb(35, 89, 160);
     overflow: hidden;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 12px -2px black;
+    position: sticky;
 }
 
 .navbar a {
@@ -31,41 +49,44 @@ body {
     float: right;
 }
 
-.image img {
-    width: 500px;
-    height: 500px;
+.project {
+    background: white;
+    width: calc(100% - 6em);
+    color: black;
+    box-shadow: 0 3px 6px -2px #ccc;
+    margin: 2em auto;
+    padding: 1em;
+}
+
+.project img {
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     float: right;
     padding: 0 20px 20px 0;
 }
 
-.content h2 {
+.about-content h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.about-content h3 {
     font-size: 30px;
 }
 
-.content h3 {
-    font-size: 30px;
-}
-
-.content p {
+.about-content p {
     font-size: 25px;
+    text-align: center;
 }
 
-#ball img {
+.about-content img {
     width: 500px;
     height: 500px;
     object-fit: cover;
     float: right;
     padding: 0 20px 20px 0;
     text-align: center;
-}
-
-#snow img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    float: left;
-    padding: 0 20px 20px 0;
 }
 
 #desk img {
@@ -83,4 +104,38 @@ body {
     object-fit: cover;
     float: left;
     padding: 0 20px 20px 0;
+}
+
+#image img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    float: left;
+    padding: 0 20px 20px 0;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    height: 50px;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 12px -2px black;
+    z-index: auto;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+form {
+    font-size: 25px;
+    max-width: 600px;
+    margin: auto;
 }
